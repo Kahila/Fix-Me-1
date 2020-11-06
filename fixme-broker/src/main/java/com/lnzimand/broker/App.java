@@ -2,6 +2,8 @@ package com.lnzimand.broker;
 
 import com.lnzimand.broker.controller.*;
 
+import java.io.IOException;
+
 /**
  * @author yaqwaqwa
  */

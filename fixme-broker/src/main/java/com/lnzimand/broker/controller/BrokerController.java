@@ -15,9 +15,10 @@ import java.util.concurrent.Future;
 
 public class BrokerController {
 
-    private final String    HOST = "127.0.0.1";
+    private final String HOST = "127.0.0.1";
     private final int       PORT_NUMBER = 5000;
 
+    //Attempting connection...
     public void connect() {
         try {
             AsynchronousSocketChannel socketChannel = AsynchronousSocketChannel.open();
@@ -43,11 +44,18 @@ public class BrokerController {
             socketChannel.write(attachment.buffer, attachment, ioHandler);
             attachment.mainThread.join();
 
+            //
+
         } catch (InterruptedException | IOException | ExecutionException e) {
             System.err.println(e.getMessage());
         }
 
     }
+
+//    public void  run(){
+//
+//    }
+
 
     private void log(String string) {
         System.out.println(string);
