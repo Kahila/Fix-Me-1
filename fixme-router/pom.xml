@@ -3,15 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>fixme</artifactId>
-    <groupId>com.lnzimand</groupId>
+    <groupId>com.yaqwaqwa</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.lnzimand.router</groupId>
   <artifactId>fixme-router</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-  <name>fixme-router</name>
+  <name>router</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -23,10 +22,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
+      <groupId>com.yaqwaqwa</groupId>
+      <artifactId>fixme-core</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
