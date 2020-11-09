@@ -31,12 +31,8 @@ public class IdentifyDestination extends Router {
                 String id = null;
                 if (clientInfo.message.contains("56=")) {
                     id = clientInfo.message.substring(clientInfo.message.indexOf("56=") + 3, clientInfo.message.indexOf("56=") + 9);
-                    try {
-                        toClient = RouterController.getClient(Integer.parseInt(id));
-                        prepareToClient();
-                    } catch (NumberFormatException e) {
-                        prepareToClient("Invalid input");
-                    }
+                    toClient = RouterController.getClient(Integer.parseInt(id));
+                    prepareToClient();
                 }
             }
         }
